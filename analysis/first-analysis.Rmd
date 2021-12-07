@@ -1,0 +1,18 @@
+---
+title: "first-analysis"
+author: "Deborah Kunkel"
+date: "2021-12-07"
+output: workflowr::wflow_html
+editor_options:
+  chunk_output_type: console
+---
+
+## Introduction
+
+```{r}
+x <- rnorm(100)
+sigma <- 2
+y <- 1.5 - 0.5*x + rnorm(100,0,sigma)
+plot(x,y)
+```
+
